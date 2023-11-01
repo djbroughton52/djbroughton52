@@ -1,0 +1,16 @@
+/* CSS file comments are enclose in asterisk backslash symbols */
+/* style.css */
+/**/
+/**/
+/* format all h2 in html file that liks to this style.css file */
+h2 {
+    background-color: orange;
+    color: blue;
+  }
+/* format all p tags*/
+/* NB if there are any internal formats in the HTML file, they will rule */
+p {
+    background-color: yellow;
+    color: Red);
+  }
+/* format specific id para "pDJB" */
