@@ -8,18 +8,44 @@
     <!--  -->
     <title>Website - GitHubPages</title>
     <!--  -->
-	<link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- auto auto for max number of columns, it flexes down in smaller window size. -->
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 5px;
+        background-color: blueviolet;
+        padding: 20px;
+      }
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid black;
+        text-align: center;
+        font-size: 10px;
+      }
+    </style>
   </head>
   <body>
-    <h1 style="background-color: cyan">H1 Page of GitHubPages test website</h1>
-    <h2>H2 2nd heading of GitHubPages test website</h1>
-    <p>Test website to GitHubPages</p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-      aspernatur suscipit odit perspiciatis quos? Aut, libero laborum alias
-      earum vero officiis exercitationem ex expedita porro harum sunt,
-      assumenda, totam optio?
-    </p>
-	<img src="img\olive_01.jpg" width=400px alt"Olive_Ruth">
+    <h1 style="background-color: blueviolet; text-align: center">
+      PHOTO GALLERY
+    </h1>
+    <div class="grid-container">
+      <div><img src="img\olive_00.jpg" /></div>
+      <div><img src="img\olive_01.jpg" /></div>
+      <div><img src="img\olive_02.jpg" /></div>
+      <div><img src="img\olive_03.jpg" /></div>
+      <div><img src="img\olive_04.jpg" /></div>
+      <div><img src="img\olive_05.jpg" /></div>
+      <div><img src="img\olive_06.jpg" /></div>
+      <div><img src="img\olive_07.jpg" /></div>
+      <div><img src="img\olive_08.jpg" /></div>
+      <div><img src="img\olive_09.jpg" /></div>
+      <div><img src="img\olive_10.jpg" /></div>
+      <div><img src="img\olive_11.jpg" /></div>
+      <div><img src="img\olive_12.jpg" /></div>
+      <div><img src="img\olive_13.jpg" /></div>
+      <div><img src="img\olive_14.jpg" /></div>
+    </div>
   </body>
 </html>
