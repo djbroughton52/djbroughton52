@@ -74,9 +74,10 @@ a {
   color: black;
 }
 h2 {
-    background-color: violet;
+    background-color: Grey;
     color: white;
-    font-size: 22px;;
+    font-size: 22px;
+    padding: 2px;
   }
 /* format all p tags*/
 /* NB if there are any internal formats in the HTML file, they will rule */
