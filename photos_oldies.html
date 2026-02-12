@@ -1,75 +1,57 @@
 <!DOCTYPE html>
-<!-- Website - test to GitHubPages ? -->
-<!-- semi-colon ; to separate css attributes. last attribute has no semi-colon -->
 <html lang="en">
-  <head>
-    <!-- Metadata is inserted between <head> ,/head> tags -->
-    <metadata charset="UTF-8" />
-    <!--  -->
-    <title>Oldies</title>
-    <!--  -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- auto auto for max number of columns, it flexes down in smaller window size. -->
-  </head>
-  <body>
-    <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="links.html">Links</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-      <a class="active" href="photos.html">Photos</a>
-    </div>
-    <h1>PHOTO GALLERY: OLDIES</h1>
-    <h2 style="text-align: center">
-      Left-click an image for enlargement. Then close the new window to return
-      to Photos Menu.
-    </h2>
-    <div class="flex-container">
-      <div>
-        <a href="oldies_01.jpg" target="_blank"><img src="oldies_01.jpg" /></a>
-      </div>
-      <div>
-        <a href="oldies_02.jpg" target="_blank"><img src="oldies_02.jpg" /></a>
-      </div>
-      <div>
-        <a href="oldies_03.jpg" target="_blank"><img src="oldies_03.jpg" /></a>
-      </div>
-      <div>
-        <a href="oldies_04.jpg" target="_blank"><img src="oldies_04.jpg" /></a>
-      </div>
-      <div>
-        <a href="oldies_05.jpg" target="_blank"><img src="oldies_05.jpg" /></a>
-      </div>
-      <div>
-        <a href="oldies_06.jpg" target="_blank"><img src="oldies_06.jpg" /></a>
-      </div>
-      <div>
-        <a href="oldies_07.jpg" target="_blank"><img src="oldies_07.jpg" /></a>
-      </div>
-      <div>
-        <a href="oldies_08.jpg" target="_blank"><img src="oldies_08.jpg" /></a>
-      </div>
-      <div>
-        <a href="oldies_09.jpg" target="_blank"><img src="oldies_09.jpg" /></a>
-      </div>
-      <div>
-        <a href="oldies_10.jpg" target="_blank"><img src="oldies_10.jpg" /></a>
-      </div>
-      <div>
-        <a href="oldies_11.jpg" target="_blank"><img src="oldies_11.jpg" /></a>
-      </div>
-      <div>
-        <a href="oldies_12.jpg" target="_blank"><img src="oldies_12.jpg" /></a>
-      </div>
-      <div>
-        <a href="oldies_13.jpg" target="_blank"><img src="oldies_13.jpg" /></a>
-      </div>
-      <div>
-        <a href="oldies_14.jpg" target="_blank"><img src="oldies_14.jpg" /></a>
-      </div>
-      <div>
-        <a href="oldies_15.jpg" target="_blank"><img src="oldies_15.jpg" /></a>
-      </div>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Oldies</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Lightbox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="links.html">Links</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a class="active" href="photos.html">Photos</a>
+  </div>
+
+  <h1>PHOTO GALLERY: OLDIES</h1>
+  <h2 style="text-align: center">
+    Left-click an image for enlargement. Use arrows or keyboard to navigate.
+  </h2>
+
+  <div class="flex-container">
+    <div><a href="oldies_01.jpg" data-lightbox="oldies" data-title="Oldies 01"><img src="oldies_01.jpg" /></a></div>
+    <div><a href="oldies_02.jpg" data-lightbox="oldies" data-title="Oldies 02"><img src="oldies_02.jpg" /></a></div>
+    <div><a href="oldies_03.jpg" data-lightbox="oldies" data-title="Oldies 03"><img src="oldies_03.jpg" /></a></div>
+    <div><a href="oldies_04.jpg" data-lightbox="oldies" data-title="Oldies 04"><img src="oldies_04.jpg" /></a></div>
+    <div><a href="oldies_05.jpg" data-lightbox="oldies" data-title="Oldies 05"><img src="oldies_05.jpg" /></a></div>
+    <div><a href="oldies_06.jpg" data-lightbox="oldies" data-title="Oldies 06"><img src="oldies_06.jpg" /></a></div>
+    <div><a href="oldies_07.jpg" data-lightbox="oldies" data-title="Oldies 07"><img src="oldies_07.jpg" /></a></div>
+    <div><a href="oldies_08.jpg" data-lightbox="oldies" data-title="Oldies 08"><img src="oldies_08.jpg" /></a></div>
+    <div><a href="oldies_09.jpg" data-lightbox="oldies" data-title="Oldies 09"><img src="oldies_09.jpg" /></a></div>
+    <div><a href="oldies_10.jpg" data-lightbox="oldies" data-title="Oldies 10"><img src="oldies_10.jpg" /></a></div>
+    <div><a href="oldies_11.jpg" data-lightbox="oldies" data-title="Oldies 11"><img src="oldies_11.jpg" /></a></div>
+    <div><a href="oldies_12.jpg" data-lightbox="oldies" data-title="Oldies 12"><img src="oldies_12.jpg" /></a></div>
+    <div><a href="oldies_13.jpg" data-lightbox="oldies" data-title="Oldies 13"><img src="oldies_13.jpg" /></a></div>
+    <div><a href="oldies_14.jpg" data-lightbox="oldies" data-title="Oldies 14"><img src="oldies_14.jpg" /></a></div>
+    <div><a href="oldies_15.jpg" data-lightbox="oldies" data-title="Oldies 15"><img src="oldies_15.jpg" /></a></div>
+  </div>
+
+  <!-- Lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.lightbox) {
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        });
+      }
+    });
+  </script>
+</body>
 </html>
