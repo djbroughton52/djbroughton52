@@ -1,76 +1,57 @@
 <!DOCTYPE html>
-<!-- Website - test to GitHubPages ? -->
-<!-- semi-colon ; to separate css attributes. last attribute has no semi-colon -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Olive_01</title>
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Lightbox gallery -->
-  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+  <!-- Lightbox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 </head>
-  <body>
-    <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="links.html">Links</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-      <a class="active" href="photos.html">Photos</a>
-    </div>
-    <h1>PHOTO GALLERY: OLIVE - 01</h1>
-    <h2 style="text-align: center">
-      Left-click an image for enlargement. Then close the new window to return
-      to Photos Menu.
-    </h2>
-    <div class="flex-container">
-      <div>
-        <a href="olive_01.jpg" data-lightbox="olive"><img src="olive_01.jpg" /></a>
-      </div>
-      <div>
-        <a href="olive_02.jpg" data-lightbox="olive"><img src="olive_02.jpg" /></a>
-      </div>
-      <div>
-        <a href="olive_03.jpg" data-lightbox="olive"><img src="olive_03.jpg" /></a>
-      </div>
-      <div>
-        <a href="olive_04.jpg" data-lightbox="olive"><img src="olive_04.jpg" /></a>
-      </div>
-      <div>
-        <a href="olive_05.jpg" data-lightbox="olive"><img src="olive_05.jpg" /></a>
-      </div>
-      <div>
-        <a href="olive_06.jpg" data-lightbox="olive"><img src="olive_06.jpg" /></a>
-      </div>
-      <div>
-        <a href="olive_07.jpg" data-lightbox="olive"><img src="olive_07.jpg" /></a>
-      </div>
-      <div>
-        <a href="olive_08.jpg" data-lightbox="olive"><img src="olive_08.jpg" /></a>
-      </div>
-      <div>
-        <a href="olive_09.jpg" data-lightbox="olive"><img src="olive_09.jpg" /></a>
-      </div>
-      <div>
-        <a href="olive_10.jpg" data-lightbox="olive"><img src="olive_10.jpg" /></a>
-      </div>
-      <div>
-        <a href="olive_11.jpg" data-lightbox="olive"><img src="olive_11.jpg" /></a>
-      </div>
-      <div>
-        <a href="olive_12.jpg" data-lightbox="olive"><img src="olive_12.jpg" /></a>
-      </div>
-      <div>
-        <a href="olive_13.jpg" data-lightbox="olive"><img src="olive_13.jpg" /></a>
-      </div>
-      <div>
-        <a href="olive_14.jpg" data-lightbox="olive"><img src="olive_14.jpg" /></a>
-      </div>
-      <div>
-        <a href="olive_15.jpg" data-lightbox="olive"><img src="olive_15.jpg" /></a>
-      </div>
-    </div>
-  </body>
-</html>
+<body>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="links.html">Links</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a class="active" href="photos.html">Photos</a>
+  </div>
 
+  <h1>PHOTO GALLERY: OLIVE - 01</h1>
+  <h2 style="text-align: center">
+    Left-click an image for enlargement. Use arrows or keyboard to navigate.
+  </h2>
+
+  <div class="flex-container">
+    <div><a href="olive_01.jpg" data-lightbox="olive" data-title="Olive 01"><img src="olive_01.jpg" /></a></div>
+    <div><a href="olive_02.jpg" data-lightbox="olive" data-title="Olive 02"><img src="olive_02.jpg" /></a></div>
+    <div><a href="olive_03.jpg" data-lightbox="olive" data-title="Olive 03"><img src="olive_03.jpg" /></a></div>
+    <div><a href="olive_04.jpg" data-lightbox="olive" data-title="Olive 04"><img src="olive_04.jpg" /></a></div>
+    <div><a href="olive_05.jpg" data-lightbox="olive" data-title="Olive 05"><img src="olive_05.jpg" /></a></div>
+    <div><a href="olive_06.jpg" data-lightbox="olive" data-title="Olive 06"><img src="olive_06.jpg" /></a></div>
+    <div><a href="olive_07.jpg" data-lightbox="olive" data-title="Olive 07"><img src="olive_07.jpg" /></a></div>
+    <div><a href="olive_08.jpg" data-lightbox="olive" data-title="Olive 08"><img src="olive_08.jpg" /></a></div>
+    <div><a href="olive_09.jpg" data-lightbox="olive" data-title="Olive 09"><img src="olive_09.jpg" /></a></div>
+    <div><a href="olive_10.jpg" data-lightbox="olive" data-title="Olive 10"><img src="olive_10.jpg" /></a></div>
+    <div><a href="olive_11.jpg" data-lightbox="olive" data-title="Olive 11"><img src="olive_11.jpg" /></a></div>
+    <div><a href="olive_12.jpg" data-lightbox="olive" data-title="Olive 12"><img src="olive_12.jpg" /></a></div>
+    <div><a href="olive_13.jpg" data-lightbox="olive" data-title="Olive 13"><img src="olive_13.jpg" /></a></div>
+    <div><a href="olive_14.jpg" data-lightbox="olive" data-title="Olive 14"><img src="olive_14.jpg" /></a></div>
+    <div><a href="olive_15.jpg" data-lightbox="olive" data-title="Olive 15"><img src="olive_15.jpg" /></a></div>
+  </div>
+
+  <!-- Lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.lightbox) {
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        });
+      }
+    });
+  </script>
+</body>
+</html>
