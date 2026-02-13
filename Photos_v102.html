@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery Template</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Lightbox CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="links.html">Links</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a class="active" href="photos.html">Photos</a>
+  </div>
+
+  <h1 id="gallery-title">PHOTO GALLERY</h1>
+  <h2 style="text-align: center">
+    Left-click an image for enlargement. Use arrows or keyboard to navigate.
+  </h2>
+
+  <div class="flex-container" id="gallery-container">
+    <!-- Images will be generated here -->
+  </div>
+
+  <script>
+    // ===== CONFIGURE YOUR GALLERY =====
+    const galleryName = "mygallery"; // data-lightbox group name
+    const imageFiles = [
+      "Olive_v104PXL_20250131_17175688.jpg",
+      "Olive_v104PXL_20250131_22395680.jpg",
+      "Olive_v104PXL_20250218_11031496.jpg",
+      "Olive_v104PXL_20250409_10043512.jpg",
+      "Olive_v104PXL_20250413_11522307.jpg"
+      // Add as many filenames as you like
+    ];
+
+    // Optional: gallery title
+    document.getElementById("gallery-title").textContent = "PHOTO GALLERY: My Gallery";
+
+    // ===== AUTOMATICALLY GENERATE HTML =====
+    const container = document.getElementById("gallery-container");
+    imageFiles.forEach((filename, index) => {
+      const div = document.createElement("div");
+      const link = document.createElement("a");
+      link.href = filename;
+      link.setAttribute("data-lightbox", galleryName);
+      link.setAttribute("data-title", filename.replace(/\.[^/.]+$/, "")); // Remove extension for caption
+      const img = document.createElement("img");
+      img.src = filename;
+      link.appendChild(img);
+      div.appendChild(link);
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>
