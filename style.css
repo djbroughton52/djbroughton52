@@ -88,7 +88,6 @@ img {
   width: 170px;
 }
 /* ================== LINKS PAGE TABLE ================== */
-/* ================== LINKS PAGE TABLE ================== */
 .grid-container {
   width: 100%;
   display: flex;
@@ -160,4 +159,9 @@ img {
 }
 .indented {
   padding-left: 30px;
+}
+
+/* ================== OPTIONAL SPACE AFTER PARAGRAPH ================== */
+.space-after {
+  margin-bottom: 20px; /* blank line after paragraph */
 }
