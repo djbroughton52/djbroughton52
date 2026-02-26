@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- Heading moved to the top -->
-  <h1 id="gallery-title">WEDNESDAY CLUB - PHOTOS: OLIVE & PRESTON</h1>
+  <h1 id="gallery-title">PHOTOS: OLIVE AND PRESTON</h1>
   <!-- Your links bar stays exactly the same -->
   <div class="topnav">
     <a href="index.html">Home</a>
@@ -53,17 +53,17 @@
     ];
     // Optional: gallery title
     document.getElementById("gallery-title").textContent =
-      "PHOTO GALLERY: OLIVE & PRESTON - 02";
+      "PHOTOs: OLIVE AND PRESTON";
     // ===== AUTOMATICALLY GENERATE HTML =====
     const container = document.getElementById("gallery-container");
     imageFiles.forEach((filename) => {
       const div = document.createElement("div");
       const link = document.createElement("a");
-      link.href = filename;
+      link.href = "photos/Olive02/" + filename;
       link.setAttribute("data-lightbox", galleryName);
       link.setAttribute("data-title", filename.replace(/\.[^/.]+$/, ""));
       const img = document.createElement("img");
-      img.src = filename;
+      img.src = "photos/Olive02/" + filename;
       link.appendChild(img);
       div.appendChild(link);
       container.appendChild(div);

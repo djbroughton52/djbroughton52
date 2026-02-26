@@ -4,17 +4,13 @@
   <meta charset="UTF-8" />
   <title>Gallery Template</title>
   <link rel="stylesheet" href="style.css" />
-
   <!-- Lightbox CSS -->
   <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
 </head>
-
 <body>
-
   <!-- Heading moved to the top -->
-  <h1 id="gallery-title">WEDNESDAY CLUB - PHOTOS: OLIVE 01</h1>
-
+  <h1 id="gallery-title">PHOTOS: OLIVE</h1>
   <!-- Your links bar stays exactly the same -->
   <div class="topnav">
     <a href="index.html">Home</a>
@@ -23,15 +19,12 @@
     <a href="about.html">About</a>
     <a class="active" href="photos.html">Photos</a>
   </div>
-
   <h2 style="text-align: center">
     Left-click an image for enlargement. Use arrows or keyboard to navigate.
   </h2>
-
   <div class="flex-container" id="gallery-container">
     <!-- Images will be generated here -->
   </div>
-
   <script>
     // ===== CONFIGURE YOUR GALLERY =====
     const galleryName = "Olive_01"; // data-lightbox group name
@@ -58,25 +51,22 @@
       "Olive_01_20.jpg",
       "Olive_01_21.jpg"
     ];
-
     // Optional: gallery title
-    document.getElementById("gallery-title").textContent = "PHOTO GALLERY: OLIVE - 01";
-
+    document.getElementById("gallery-title").textContent = "PHOTOS: OLIVE";
     // ===== AUTOMATICALLY GENERATE HTML =====
     const container = document.getElementById("gallery-container");
     imageFiles.forEach((filename) => {
       const div = document.createElement("div");
       const link = document.createElement("a");
-      link.href = filename;
+      link.href = "photos/Olive01/" + filename;
       link.setAttribute("data-lightbox", galleryName);
       link.setAttribute("data-title", filename.replace(/\.[^/.]+$/, ""));
       const img = document.createElement("img");
-      img.src = filename;
+      img.src = "photos/Olive01/" + filename;
       link.appendChild(img);
       div.appendChild(link);
       container.appendChild(div);
     });
   </script>
-
 </body>
 </html>
